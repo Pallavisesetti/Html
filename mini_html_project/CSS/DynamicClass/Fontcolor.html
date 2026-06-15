@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function onClickColorChange() {
+            debugger;
+            var fontColor = document.getElementById("txtColor").value;
+            document.getElementById("pText").style.color = fontColor;
+        }
+    </script>
+</head>
+
+<body>
+    <label id="lblFontsize">Font Color</label>
+    <input type="text" id="txtColor">
+    <p id="pText">I am Pallavi Sesetti</p>
+
+    <button id="btnChangeColor" onclick="onClickColorChange()">Change color</button>
+</body>
+
+
+</html>
