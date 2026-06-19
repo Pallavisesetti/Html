@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function onClickValidateName(){
+                debugger;
+                var nameInput=document.getElementById('txtName').value;
+                if(nameInput==''){
+                    document.getElementById("txtName").style.border= "2px solid red";
+                }
+            }
+        </script>
+    </head>
+        <body>
+            <h1>Dynamic CSS Validation</h1>
+            <label  for="txtName" id="lblName">Name<span style="color: red; id="spanName">*</span></label>
+            <input type="text" id="txtName" name="textName">
+            <button id="btnValidate" onclick="onClickValidateName()">Validate</button>
+        </body>
+    </head>
+</html>
