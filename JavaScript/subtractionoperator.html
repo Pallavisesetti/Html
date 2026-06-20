@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            
+            function onClickSubtract(){
+                var firstnumber=Number(document.getElementById("txtFirstNumber").value);
+                var secondnumber=Number(document.getElementById("txtSecondNumber").value);
+                alert(firstnumber-secondnumber);
+            }
+
+        </script>
+    </head>
+    <body>
+        <h1>
+            This is an Subtarction Operation 
+        </h1>
+        <label type="lblFirstNumber" id="txtFirstNumber">Starting Number</label>
+        <input type="Number" id="txtFirstNumber"></input><br><br>
+        <label type="lblSecondNumber" id="txtSecondNumber">Ending Number</label>
+        <input type="Number" id="txtSecondNumber"></input><br><br>
+        <button id="btnSubtract" onClick="onClickSubtract()">Subtarct</button>
+    </body>
+</html>
