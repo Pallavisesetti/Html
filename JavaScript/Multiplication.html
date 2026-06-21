@@ -8,9 +8,14 @@
 
 
         function onClickMultiplication() {
-            var num1 = document.getElementById("txtInputNo").value;
+            var num1 = document.getElementById("txtFirstNumber").value;
             alert(num1 * num1);
-            
+
+        }
+        function onClickAddition() {
+            var num1 = Number(document.getElementById("txtFirstNumber").value);
+            var num2 = Number(document.getElementById("txtSecondNumber").value);
+            alert(num1 + num2);
         }
 
 
@@ -19,9 +24,12 @@
 
 <body>
     <h1>This is an operation of Multiplication</h1>
-    <label >Input No</label>
-    <input id="txtInputNo" type="number">
+    <label>Input No</label>
+    <input id="txtFirstNumber" type="number"><br><br>
+    <label>Input no</label>
+    <input id="txtSecondNumber" type="number"><br><br>
     <button id="btnMultiplication" onclick="onClickMultiplication()"> square</button>
+    <button id="btnAddition" onclick="onClickAddition()">Add</button>
 </body>
 
 </html>
