@@ -6,16 +6,21 @@
 
 
 
-
+        result = 0
         function onClickMultiplication() {
+            debugger;
             var num1 = document.getElementById("txtFirstNumber").value;
-            alert(num1 * num1);
+            result=num1 * num1;
+            alert(result);
 
         }
         function onClickAddition() {
-            var num1 = Number(document.getElementById("txtFirstNumber").value);
-            var num2 = Number(document.getElementById("txtSecondNumber").value);
-            alert(num1 + num2);
+            debugger;
+            var firstNumber = Number(document.getElementById("txtFirstNumber").value);
+            var secondNumber = Number(document.getElementById("txtSecondNumber").value);
+            result=firstNumber + secondNumber
+            alert(result);
+
         }
 
 
